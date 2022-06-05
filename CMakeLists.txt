@@ -9,4 +9,4 @@ file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/CS170_Spring_2022_Large_data__106.txt
 file(COPY ${CMAKE_CURRENT_SOURCE_DIR}/CS170_Spring_2022_Small_data__106.txt
      DESTINATION ${CMAKE_CURRENT_BINARY_DIR})
 ADD_EXECUTABLE(main 
-    "main.cpp" )
+    "main.cpp"  "sortingFunctions.h" "sortingFunctions.cpp" "parser.h" "parser.cpp")
