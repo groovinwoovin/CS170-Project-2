@@ -60,6 +60,8 @@ int main(){
 	double stddev;
 
 	double sum = 0;
+
+	cout << "Normalizing data...\n";
 	vector<double> values;
 	for (int i = 1; i < dataSet[0].size(); ++i) { // For each feature
 		for (int j = 0; j < dataSet.size(); ++j) {
@@ -81,6 +83,8 @@ int main(){
 			dataSet[l][i] = (dataSet[l][i] - mean) / stddev;
 		}
 	}
+
+	cout << "Data has " << dataSet[0].size() - 1 << " features and " << dataSet.size() << " instances\n";
 
 	//Debug, uncomment to see normalized dataset
 	/*cout << "AFTER\n";

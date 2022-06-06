@@ -5,7 +5,7 @@
 using namespace std;
 
 double leaveOneOutCrossValidation(vector<vector<double>> data, vector<int> featureSet) {
-	// Set inital things
+	// Set initial things
 	int accuracy = 0;
 	int dataFeatureSize = data[0].size();
 
@@ -142,7 +142,7 @@ void forwardSelection(vector<vector<double>> data) {
 }
 
 void backwardsElimination(vector<vector<double>> data) {
-	// Initalize full set
+	// Initialize full set
 	vector<int> currentFeatureSet;
 	int amountOfFeatures = data[0].size() - 1;
 
